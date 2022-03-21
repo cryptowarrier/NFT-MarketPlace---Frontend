@@ -1,0 +1,137 @@
+.profileEditor_container {
+    flex: 4;
+    font-family: Futura;
+    display: flex;
+
+    .Title {
+        font-weight: bold;
+        font-size: 160px;
+        line-height: 100px;
+        letter-spacing: -12px;
+        color: #f4e7d5;
+        padding-left: 50px;
+        padding-bottom: 30px;
+        display: inline-block;
+        position: absolute;
+        top: -160px;
+    }
+
+    .line {
+        width: 0px;
+        height: 100%;
+        border-left: 1px solid #828282;
+        padding-top: 140px;
+        margin-top: -140px;
+    }
+
+    .mainBox {
+        flex-grow: 1;
+        box-sizing: border-box;
+        padding-left: 6.7vw;
+        padding-right: 5.3vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-family: Futura-Light;
+        font-weight: lighter;
+        color: #4f4f4f;
+        font-size: 25px;
+        line-height: 27px;
+
+        .inputBoxes {
+            width: 36.46vw;
+            min-width: 300px;
+
+            .sns {
+                margin-top: -1px;
+            }
+
+            .inputBox {
+                width: 100%;
+                height: 56px;
+                display: flex;
+                align-items: center;
+                border-radius: 15px;
+                border: 1px solid #808080;
+                box-sizing: border-box;
+                padding: 5px 10px;
+
+                input,
+                textarea {
+                    border: none;
+                    border-radius: 15px;
+                    outline: none;
+                    background-color: transparent;
+                    font-family: Futura-Light;
+                    font-weight: lighter;
+                    color: #4f4f4f;
+                    font-size: 25px;
+                    line-height: 27px;
+                    flex-grow: 1;
+                    height: 100%;
+                }
+            }
+
+            .saveBtn {
+                width: 114px;
+                height: 58px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #7f7c78;
+                border-radius: 15px;
+                color: white;
+                cursor: pointer;
+                margin-top: 240px;
+            }
+        }
+
+        .fileBoxes {
+            width: 26vw;
+            min-width: 250px;
+
+            .imageUploader {
+                width: 250px;
+                height: 250px;
+                box-sizing: border-box;
+                border: 1px solid #808080;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .bannerUploader {
+                width: 100%;
+                box-sizing: border-box;
+                height: 190px;
+                border-radius: 15px;
+                border: 1px solid #808080;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .previewProfile {
+                width: 56%;
+                min-width: 200px;
+                box-sizing: border-box;
+                height: 56px;
+                padding: 5px 10px;
+                margin-top: 30px;
+                border-radius: 15px;
+                border: 1px solid #808080;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.inputLabel {
+    padding: 20px 0px 10px 0px;
+}

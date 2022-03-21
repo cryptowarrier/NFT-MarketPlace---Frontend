@@ -1,0 +1,71 @@
+.newestCard_container {
+    width: 415px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: Futura-Light;
+    margin-bottom: 30px;
+
+    img {
+        width: 100%;
+        height: 423px;
+        border-radius: 30px 30px 0px 0px;
+    }
+
+    .contentBox {
+        width: 100%;
+        height: 212px;
+        box-sizing: border-box;
+        border-radius: 0px 0px 30px 30px;
+        padding: 20px 0px;
+
+        .bigTitle {
+            text-align: center;
+            color: #F4E7D5;
+            font-size: 30px;
+            line-height: 39px;
+            font-family: Futura;
+            font-weight: bold;
+        }
+
+        .smallTitle {
+            text-align: center;
+            color: #F4E7D5;
+            font-size: 25px;
+            line-height: 27px;
+            font-weight: lighter;
+        }
+
+        .content {
+            text-align: center;
+            color: #F4E7D5;
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: lighter;
+            padding: 10px 0px;
+        }
+
+        .goBtn {
+            width: 86px;
+            height: 39px;
+            border-radius: 30px;
+            background-color: black;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Futura;
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}
+
+.centerFlex {
+    display: flex;
+    justify-content: center;
+}

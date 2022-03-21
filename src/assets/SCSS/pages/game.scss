@@ -1,0 +1,43 @@
+.game_container {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Futura-Light;
+    box-sizing: border-box;
+    padding-left: 250px;
+    padding-right: 160px;
+    display: flex;
+
+    .categories {
+        .categoryBtn {
+            margin: 15px 20px;
+            width: 175px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFF9F1;
+            font-size: 25px;
+            color: #333;
+            line-height: 27px;
+            border-radius: 15px;
+            cursor: pointer;
+            filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.5));
+        }
+
+        .categoryBtn.active {
+            color: white;
+            background-color: #000;
+        }
+    }
+
+    .cardField {
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media (max-width: 1450px) {
+            justify-content: center;
+        }
+    }
+}

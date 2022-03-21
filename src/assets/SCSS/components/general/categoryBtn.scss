@@ -1,0 +1,18 @@
+.categoryButton {
+    width: 175px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #4F4F4F;
+    line-height: 27px;
+    border-radius: 15px;
+    cursor: pointer;
+    filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.5));
+}
+
+.categoryButton.active {
+    color: white;
+    background-color: #000;
+}

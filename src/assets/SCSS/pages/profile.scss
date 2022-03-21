@@ -1,0 +1,15 @@
+.profile_container {
+    position: relative;
+    width: 100%;
+    overflow-y: visible;
+    box-sizing: border-box;
+    font-family: Futura-Light;
+    margin-top: 30px;
+    z-index:20;
+
+    .profile_content {
+        display: flex;
+        background-color: #fff9f1;
+        padding-bottom: 100px;
+    }
+}

@@ -1,0 +1,295 @@
+.nav_container {
+    position: relative;
+    background-color: #fff9f1;
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    padding-left: 250px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 99;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+    font-family: Futura-Light;
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 33px;
+    color: #4f4f4f;
+
+    @media (min-width: 2750px) {
+        padding-right: calc((100% - 2750px) / 2);
+    }
+
+    @media (max-width: 1200px) {
+        height: 73px;
+    }
+
+    @media (max-width: 800px) {
+        padding: 0px 10px;
+    }
+
+    .navItems {
+        position: relative;
+        flex-grow: 1;
+        max-width: 1070px;
+        @media (max-width: 1850px) {
+            max-width: 800px;
+        }
+
+        .navItemContainer {
+            margin-top: 17px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 1200px) {
+                display: none;
+            }
+
+            .navItem {
+                border: 2px solid transparent;
+                height: 163px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                .itemImg {
+                    height: 44px;
+                    padding: 3px;
+                }
+            }
+
+            .navItem.active {
+                background: linear-gradient(transparent calc(100% - 32px), black calc(100% - 32px));
+                border: 2px solid #f4e7d5;
+                border-radius: 15%;
+            }
+        }
+    }
+    .searchBox {
+        width: 360px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-end;
+        padding: 13px;
+        @media (max-width: 1300px) and (min-width: 1200px) {
+            width: 200px;
+        }
+
+        .searchContainer {
+            width: 100%;
+            height: 47px;
+            box-sizing: border-box;
+            border: 1px solid #808080;
+            border-radius: 40px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+
+            .searchIcon {
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .searchInput {
+                border: none;
+                outline: none;
+                border-radius: 40px;
+                flex-grow: 1;
+                background-color: #fff9f1;
+                font-family: Futura-Light;
+                font-weight: lighter;
+                font-size: 25px;
+                line-height: 33px;
+                flex-grow: 1;
+                color: #4f4f4f;
+                @media (max-width: 1300px) {
+                    width: 120px;
+                }
+            }
+        }
+    }
+    .walletBox {
+        width: 130px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .wallet {
+            width: 58px;
+            height: 45px;
+        }
+
+        @media (min-width: 1200px) {
+            .black {
+                display: none;
+            }
+        }
+        @media (max-width: 1200px) {
+            width: auto;
+            background-color: transparent;
+            padding: 13px;
+            align-items: flex-end;
+            .white {
+                display: none;
+            }
+        }
+    }
+
+    .menuBtn {
+        color: #808080;
+        font-size: 62px;
+        padding: 6px;
+        display: flex;
+        align-items: flex-end;
+        cursor: pointer;
+        position: relative;
+
+        .menuItems {
+            position: absolute;
+            top: 61px;
+            right: 0px;
+            background-color: #fff9f1;
+            width: 200px;
+            border-radius: 15px;
+            filter: drop-shadow(2px 9px 3px rgba(0, 0, 0, 0.5));
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: .3s;
+            overflow: hidden;
+            z-index: 999;
+
+            .item {
+                font-family: Futura;
+                padding: 10px 0px 5px 0px;
+                font-size: 30px;
+                border-bottom: 1px solid #808080;
+                text-align: center;
+                margin: auto;
+                width: 90%;
+            }
+            .item.active {
+                color: black;
+            }
+            a {
+                width: 100%;
+            }
+            a:last-of-type .item {
+                border: none;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            display: none;
+        }
+    }
+}
+
+.navFunction {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 63px;
+    padding-right: 91px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    @media (min-width: 2750px) {
+        width: 2750px;
+        margin: auto;
+    }
+    @media (max-width: 800px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .homeBtn {
+        position: relative;
+        height: 148px;
+        width: 172px;
+        background-color: #fff9f1;
+        border-radius: 15%;
+        margin-top: -23px;
+        border: 2px solid transparent;
+        cursor: pointer;
+        filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.5));
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
+
+        .nftLogo {
+            width: 155px;
+            height: 83px;
+            padding-top: 43px;
+            padding-left: 11px;
+        }
+    }
+
+    .homeBtn.active {
+        background-color: black;
+        border: 2px solid #f4e7d5;
+    }
+
+    .navTitle {
+        font-family: Futura;
+        font-weight: bold;
+        font-size: 160px;
+        line-height: 100px;
+        letter-spacing: -12px;
+        padding-left: 10.42vw;
+        color: #f4e7d5;
+        @media (max-width: 1350px) {
+            padding-left: 20px;
+            font-size: 130px;
+            margin-top: -10px;
+        }
+        @media (max-width: 900px) {
+            font-size: 80px;
+            margin-top: -20px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 70px;
+        }
+        @media (max-width: 445px) {
+            font-size: 60px;
+        }
+        @media (max-width: 400px) {
+            font-size: 55px;
+        }
+        @media (max-width: 367px) {
+            font-size: 50px;
+        }
+    }
+
+    .functionItems {
+        display: flex;
+        margin-top: 18px;
+
+        .notification {
+            width: 37px;
+            height: 37px;
+            padding-right: 10px;
+            cursor: pointer;
+        }
+        .userIcon {
+            width: 32px;
+            height: 32px;
+            padding-right: 10px;
+            cursor: pointer;
+        }
+        .chatIcon {
+            width: 52px;
+            height: 45px;
+            cursor: pointer;
+        }
+    }
+}

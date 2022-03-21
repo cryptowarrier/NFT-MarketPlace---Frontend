@@ -1,0 +1,40 @@
+.collections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 15px;
+    column-gap: 20px;
+    max-width: 1710px;
+    @media (max-width: 815px) {
+        justify-content: center;
+    }
+
+    & > div:nth-of-type(3n) .priceBox {
+        padding-right: 0px;
+    }
+
+    & > div:last-of-type .priceBox{
+        padding-right: 0px !important;
+    }
+
+    @media (max-width: 1711px) {
+        & > div:nth-of-type(3n) .priceBox{
+            padding-right: 20px;
+        }
+        & > div:nth-of-type(2n) .priceBox{
+            padding-right: 0px;
+        }
+    }
+
+    @media (max-width: 1248px) {
+        & > div:nth-of-type(3n) .priceBox{
+            padding-right: 0px !important;
+        }
+        & > div:nth-of-type(2n) .priceBox{
+            padding-right: 0px !important;
+        }
+        & > div:nth-of-type(n) .priceBox{
+            padding-right: 0px !important;
+        }
+    }
+}

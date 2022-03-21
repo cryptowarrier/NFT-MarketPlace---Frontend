@@ -1,0 +1,106 @@
+.crator_container {
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: Futura-Light;
+    display: flex;
+    padding-bottom: 240px;
+
+    .cratorLogo {
+        width: 260px;
+        height: 272px;
+        padding: 140px 130px 30px 150px;
+    }
+
+    .inputContainer {
+        width: 43vw;
+        min-width: 420px;
+        color: #4f4f4f;
+        font-size: 25px;
+        line-height: 27px;
+        font-weight: lighter;
+
+        .smallTitle {
+            font-size: 20px;
+            line-height: 22px;
+        }
+
+        .inputBox {
+            height: 56px;
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            border: 1px solid #808080;
+            box-sizing: border-box;
+            padding: 5px 10px;
+
+            input,
+            textarea {
+                border: none;
+                border-radius: 15px;
+                outline: none;
+                background-color: transparent;
+                font-family: Futura-Light;
+                font-weight: lighter;
+                color: #4f4f4f;
+                font-size: 25px;
+                line-height: 27px;
+                flex-grow: 1;
+                height: 100%;
+            }
+        }
+
+        .dataBox {
+            width: 100%;
+            box-sizing: border-box;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #828282;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & > div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .crossBox {
+                border-radius: 15px;
+                border: 1px solid #808080;
+            }
+
+            .switchBox {
+                width: 56px;
+                height: 32px;
+                border-radius: 15px;
+                background-color: #828282;
+                position: relative;
+                cursor: pointer;
+
+                & > div {
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 100%;
+                    background-color: #FFF9F1;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition: .3S;
+                }
+            }
+        }
+
+        .mintBtn {
+            width: 114px;
+            height: 58px;
+            border-radius: 15px;
+            background-color: #3072E3;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+}

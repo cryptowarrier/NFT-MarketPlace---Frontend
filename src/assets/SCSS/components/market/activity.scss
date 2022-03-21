@@ -1,0 +1,58 @@
+.activity {
+    max-width: 1710px;
+    font-family: Futura;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 32px;
+    color: #333;
+
+    .title {
+        @media (max-width: 1294px) {
+            text-align: center;
+        }
+    }
+
+    .selectBoxes {
+        display: flex;
+        column-gap: 15px;
+
+        @media (max-width: 1294px) {
+            justify-content: center;
+        }
+
+        @media (max-width: 900px) {
+            flex-wrap: wrap;
+            row-gap: 10px;
+        }
+
+        .selectBox {
+            width: 288px;
+            border: 1px solid #808080;
+            border-radius: 15px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+    }
+
+    .headRow {
+        max-width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        padding: 17px 0px;
+        border-bottom: 1px solid rgba(79, 79, 79, 0.3);
+
+        @media (max-width: 1294px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 700px) {
+            font-size: 16px;
+        }
+        @media (max-width: 425px) {
+            font-size: 14px;
+        }
+    }
+}

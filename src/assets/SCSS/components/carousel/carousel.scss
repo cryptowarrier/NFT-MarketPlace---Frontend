@@ -1,0 +1,186 @@
+.carousel_container {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background-color: #FFF9F1;
+    padding-bottom: 50px;
+
+    @media (max-width: 1200px) {
+        .first {
+            display: none;
+        }
+        .fivth {
+            display: none;
+        }
+        .second {
+            left: 0px !important;
+            width: 27.195vw !important;
+            height: 25.725vw !important;
+            top: 25.1125vw !important;
+        }
+
+        .main {
+            width: 70.1925vw !important;
+            height: 42.42175vw !important;
+            top: 1.53125vw !important;
+            left: 14.90375vw !important;
+        }
+
+        .fourth {
+            width: 27.195vw !important;
+            height: 25.725vw !important;
+            top: 25.1125vw !important;
+            right: 0px !important;
+        }
+    }
+
+    @media (max-width: 800px) {
+        .second{
+            display: none;
+        }
+        .fourth{
+            display: none;
+        }
+        .main {
+            width: 90vw !important;
+            height: 54.3927vw !important;
+            left: 5vw !important;
+            margin-left: -10px !important;
+        }
+    }
+
+    .first {
+        position: absolute;
+        width: 23.3vw;
+        height: 21vw;
+        top:20.5vw;
+        left: -3.8vw;
+        border-radius: 30px;
+        transition: .3s;
+        opacity: 1;
+        cursor: pointer;
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+        
+    }
+
+    .second {
+        position: absolute;
+        width: 22.2vw;
+        height: 21.04vw;
+        top:16.25vw;
+        left: 9.2vw;
+        border-radius: 30px;
+        transition: .3s;
+        opacity: 1;
+        cursor: pointer;
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+    }
+    .main {
+        position: absolute;
+        width: 57.3vw;
+        height: 34.63vw;
+        top:1.25vw;
+        left: 21.35vw;
+        border-radius: 30px;
+        transition: .3s;
+        opacity: 1;
+        cursor: pointer;
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+    }
+    .fivth {
+        position: absolute;
+        width: 23.3vw;
+        height: 21vw;
+        top:20.5vw;
+        right: -3.8vw;
+        border-radius: 30px;
+        transition: .3s;
+        opacity: 1;
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+        cursor: pointer;
+        
+    }
+    .fourth {
+        position: absolute;
+        width: 22.2vw;
+        height: 21.04vw;
+        top:16.25vw;
+        right: 9.2vw;
+        border-radius: 30px;
+        transition: .3s;
+        opacity: 1;
+        cursor: pointer;
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+    }
+
+    .itemName {
+        background-color: black;
+        border: none;
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+        border-radius: 40px;
+        color: white;
+        font-weight: lighter;
+        font-size: 30px;
+        line-height: 33px;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+        margin-top: 37.7vw;
+        display: inline-block;
+        transition: .6s;
+
+        @media (max-width: 1200px) {
+            margin-top: 45.7vw;
+        }
+        @media (max-width: 800px) {
+            margin-top: 57.7vw;
+        }
+    }
+
+    .navigatorCircles {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .navCircle {
+            width: 19px;
+            height: 19px;
+            margin: 18px;
+            border-radius: 100%;
+            background-color: #C8C8C8;
+            transition: .6s;
+            cursor: pointer;
+        }
+        .navCircle.active {
+            background-color: black;
+        }
+    }
+
+    .naviNames {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        @media (max-width: 800px) {
+            display: none;
+        }
+
+        .naviName {
+            font-weight: lighter;
+            font-size: 25px;
+            line-height: 27px;
+            text-align: center;
+            color: #4F4F4F;
+            width: 206px;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 40px;
+            box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.5);
+            transition: .6s;
+            cursor: pointer;
+        }
+        .naviName.active {
+            background-color: black;
+            color: white;
+        }
+    }
+}

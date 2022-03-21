@@ -1,0 +1,223 @@
+.footer_container {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fdebd3;
+    font-family: Futura-Light;
+    color: #333;
+
+    .footer_content {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 38px 95px 0px 98px;
+        @media (max-width: 800px) {
+            padding: 5px 10px;
+        }
+
+        .join_container {
+            width: 100%;
+            border-bottom: 1px solid #333;
+            padding-bottom: 27px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            @media (max-width: 900px) {
+                justify-content: center;
+            }
+
+            .signup_container {
+                width: 487px;
+
+                .forgetFomo {
+                    font-weight: bolder;
+                    font-size: 20px;
+                    line-height: 26px;
+                    padding-bottom: 10px;
+                }
+                .signupContext {
+                    font-weight: lighter;
+                    font-size: 20px;
+                    line-height: 22px;
+                    padding-bottom: 10px;
+                }
+                .signupLine {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    @media (max-width: 406px) {
+                        justify-content: center;
+                    }
+
+                    .signupInputBox {
+                        padding: 16px;
+                        font-weight: lighter;
+                        font-size: 20px;
+                        line-height: 22px;
+                        border-radius: 20px;
+                        border: 1px solid #333;
+                        box-sizing: border-box;
+                        flex-grow: 1;
+                        margin-right: 10px;
+
+                        .signupInput {
+                            border: none;
+                            outline: none;
+                            font-weight: lighter;
+                            font-size: 20px;
+                            line-height: 22px;
+                            color: #333;
+                            background: transparent;
+                            &::placeholder {
+                                color: #333;
+                                opacity: 0.3;
+                            }
+                        }
+                    }
+
+                    .signupBtn {
+                        padding: 16px;
+                        font-weight: bolder;
+                        font-size: 20px;
+                        line-height: 22px;
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #655e54;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        @media (max-width: 406px) {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+
+            .joinFamily {
+                max-width: 890px;
+                display: flex;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+                align-items: center;
+                @media (max-width: 912px) {
+                    justify-content: flex-start;
+                }
+                @media (max-width: 900px) {
+                    margin-top: 15px;
+                    justify-content: center;
+                }
+
+                .joinContext {
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 26px;
+                    color: #333;
+                    padding-right: 45px;
+                }
+
+                .joinIcons {
+                    min-width: 370px;
+                    width: 500px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 5px 0px;
+                    flex-wrap: wrap;
+                    @media (max-width: 550px) {
+                        width: 100%;
+                        justify-content: center;
+                        column-gap: 30px;
+                        row-gap: 15px;
+                    }
+
+                    img {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .bottomPart {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media (max-width: 728px) {
+                justify-content: center;
+            }
+
+            .leftPart {
+                width: 487px;
+                display: flex;
+                justify-content: space-between;
+                padding: 30px 0px;
+                align-items: center;
+
+                .footerNftLogo {
+                    width: 104px;
+                    height: 104px;
+                    border-radius: 100%;
+                    background-color: #FFF9F1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 90px;
+                        height: 48px;
+                        padding-left: 13px;
+                    }
+                }
+
+                .bottomContext {
+                    padding-left: 15px;
+                    font-weight: lighter;
+                    font-size: 14px;
+                    line-height: 15px;
+                    color: #333;
+                    max-width: 350px;
+                }
+            }
+
+            .rightPart {
+                display: flex;
+                padding-top: 30px;
+                @media (max-width: 728px) {
+                    width: 60%;
+                    padding-bottom: 20px;
+                    padding-top: 0px;
+                    justify-content: space-between;
+
+                }
+
+                .linkTitle {
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 26px;
+                    color: #333;
+                    padding-bottom: 20px;
+                }
+
+                .link {
+                    font-size: 20px;
+                    line-height: 26px;
+                    color: #333;
+                    font-style: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .policy_container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0px 60px 30px 50px;
+        font-size: 18px;
+        font-weight: lighter;
+        line-height: 20px;
+        color: #333;
+        display: flex;
+        justify-content: space-between;
+    }
+}
